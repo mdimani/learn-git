@@ -1,0 +1,46 @@
+Git
+
+cd <DIR> #go to Directory path
+cd .. #back to parent folder
+mkdir <folder name> #create folder
+touch <file name> #create untracked file
+
+git version
+
+git init
+git init <path>
+
+.git file 
+
+git clone
+git clone <URL/path>
+git clone --branch=master --depth=1
+
+git config user.name "m_imani"
+git config --global user.name "m_imani"
+git config --global user.email "Imani.Mohammad@mapnaec.com"
+
+git status  
+ 
+git add <New File/ Modified File> #add to staging
+
+git commit -m "<message>"
+
+git diff or git diff Head
+git diff Head^
+git diff Head^^
+git diff Head^^^ or git diff Head~3
+git diff Head~3 <specific file> 
+
+.gitignore file
+
+git stash #stash files in staging and before commited (tracked file)
+git stash -u #stash tracked and untracked files
+git stash -a #stash tracked and untracked and ignored files
+git stash show
+git stash pop stash@\{n\}
+
+git log
+git log --oneline --graph
+
+git blame
