@@ -4,6 +4,9 @@ cd <DIR> #go to Directory path
 cd .. #back to parent folder
 mkdir <folder name> #create folder
 touch <file name> #create untracked file
+ls
+ls -a
+pwd
 
 git version
 
@@ -13,7 +16,7 @@ git init <path>
 .git file 
 
 git clone
-git clone <URL/path>
+git clone <ssh-URL/path>
 git clone --branch=master --depth=1
 
 git config user.name "m_imani"
@@ -44,3 +47,22 @@ git log
 git log --oneline --graph
 
 git blame
+
+git tag
+git tag <myTag> #for last commit
+git tag <myTag> <commit hash>
+
+git reflog
+
+ssh
+ssh-keygen #private & public key
+cat <pubkeyName>
+ssh-add <privkeyName>
+eval $(ssh-agent -s)
+
+git remote
+git remote add origin <ssh-URL>
+git push origin master
+git push -u origin master
+git fetch origin master
+git pull origin master
